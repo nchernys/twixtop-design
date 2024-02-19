@@ -33,22 +33,13 @@ function CaseStudies() {
         <p>Make your target audience choose you over your competitors</p>
         <div className="section-wrapper">
           <div className="inner-case" id="id1" onClick={() => handleShow(0)}>
-            <img
-              src="https://images.unsplash.com/photo-1619241638225-14d56e47ae64?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="image"
-            />
+            <img src="/images/case1.jpg" alt="case1" />
           </div>
           <div className="inner-case" id="id2" onClick={() => handleShow(1)}>
-            <img
-              src="https://images.unsplash.com/photo-1679678691006-3afa56204979?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="image description"
-            />
+            <img src="/images/case2.jpg" alt="case2" />
           </div>
           <div className="inner-case" id="id3" onClick={() => handleShow(2)}>
-            <img
-              src="https://images.unsplash.com/photo-1552010099-5dc86fcfaa38?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="image description"
-            />
+            <img src="/images/case3.jpg" alt="case3" />
           </div>
           <div className="inner-case violet-btn" id="id4" onClick={handlePopUp}>
             Become a Client
