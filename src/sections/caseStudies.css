@@ -42,7 +42,6 @@
 .inner-case#id1,
 .inner-case#id2 {
   width: 100%;
-  min-height: 12em;
 }
 
 .inner-case#id3,
@@ -99,6 +98,6 @@
 
 @media screen and (min-width: 1000px) {
   .section-wrapper {
-    height: 90vh;
+    height: 85vh;
   }
 }

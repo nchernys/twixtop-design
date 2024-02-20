@@ -17,11 +17,12 @@
   justify-content: space-evenly;
   padding: 2em 0;
   font-size: 0.9rem;
+  margin: 0 0 3em 0;
 }
 
 .body-section {
   width: 90%;
-  padding: 3rem 0 1em;
+  padding: 1em 0 2em;
   margin: 0 auto;
 }
 
@@ -149,8 +150,7 @@
   display: none;
 }
 
-@media screen and (min-width: 600px) and (min-height: 1000px),
-  (min-width: 1000px) and (max-height: 900px) {
+@media screen and (min-width: 600px) {
   .body-section {
     width: 90%;
   }
