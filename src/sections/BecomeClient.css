@@ -1,5 +1,5 @@
 .pop-up {
-  background-color: rgb(30, 30, 30);
+  background-color: rgba(75, 75, 75, 1);
   padding: 2rem 1.5rem 2.5rem;
   width: 80%;
   height: auto;
@@ -8,14 +8,14 @@
   max-height: 90%;
   font-size: 0.9em;
   margin: 2em auto;
+  max-width: 20em;
 }
 
-form {
+.pop-up form {
   display: flex;
   flex-direction: column;
 }
-
-input[type="text"],
+.pop-up form input[type="text"],
 textarea {
   width: 100%;
   margin: 0.5em 0;
@@ -42,7 +42,7 @@ textarea {
   color: rgba(0, 0, 0, 0.7);
 }
 
-input[type="submit"] {
+.pop-up form input[type="submit"] {
   padding: 0.7em 1.5em;
   text-align: center;
   border: none;
@@ -50,6 +50,7 @@ input[type="submit"] {
   font-size: 0.9em;
   width: auto;
   margin: 2em 0 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .form-close {
@@ -74,8 +75,8 @@ input[type="submit"] {
 
 @media screen and (min-width: 600px) and (min-height: 1000px) {
   .pop-up {
-    width: 55%;
-    font-size: 1.3em;
+    width: 50%;
+    font-size: 1.2em;
   }
 }
 

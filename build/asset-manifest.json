@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b11700f.css",
+    "main.css": "/static/css/main.75df166b.css",
     "main.js": "/static/js/main.85d1c5bb.js",
     "static/media/red_welcome_sm.jpg": "/static/media/red_welcome_sm.8a10533296d8bad186d9.jpg",
     "index.html": "/index.html",
-    "main.9b11700f.css.map": "/static/css/main.9b11700f.css.map",
+    "main.75df166b.css.map": "/static/css/main.75df166b.css.map",
     "main.85d1c5bb.js.map": "/static/js/main.85d1c5bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b11700f.css",
+    "static/css/main.75df166b.css",
     "static/js/main.85d1c5bb.js"
   ]
 }
