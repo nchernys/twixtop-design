@@ -60,6 +60,12 @@
   }
 }
 
+@media screen and (max-height: 480px) and (max-width: 1000px) {
+  .show-case {
+    font-size: 1em;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .show-case {
     height: 80%;

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe5d68cf.css",
+    "main.js": "/static/js/main.85d1c5bb.js",
+    "static/media/red_welcome_sm.jpg": "/static/media/red_welcome_sm.8a10533296d8bad186d9.jpg",
+    "index.html": "/index.html",
+    "main.fe5d68cf.css.map": "/static/css/main.fe5d68cf.css.map",
+    "main.85d1c5bb.js.map": "/static/js/main.85d1c5bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe5d68cf.css",
+    "static/js/main.85d1c5bb.js"
+  ]
+}
