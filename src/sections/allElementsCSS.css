@@ -1,5 +1,5 @@
 .welcome-page {
-  background-image: url("/public/images/red_welcome-sm.jpg");
+  background-image: url("/public/images/red_welcome_sm.jpg");
   width: 100%;
   height: auto;
   background-position: center;
@@ -15,24 +15,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1rem 0 4rem;
+  padding: 2em 0;
   font-size: 0.9rem;
 }
 
 .body-section {
   width: 90%;
-  padding: 2rem 0;
-  margin: 1rem auto;
+  padding: 3rem 0 1em;
+  margin: 0 auto;
 }
 
 .body-section h3 {
   font-size: 1.3rem;
-  margin: 0 0 0.5rem 0;
-}
-
-.body-section p {
-  font-size: 0.9em;
-  margin: 0 0 1rem 0;
+  margin: 0;
 }
 
 .section-wrapper-nogrid {
@@ -76,7 +71,7 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .footer-page {
@@ -99,13 +94,78 @@
   width: 60%;
 }
 
-@media screen and (min-width: 600px) {
+.arrows {
+  width: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 2em;
+  height: 2em;
+  margin: 0 0 0 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-arrow img,
+.right-arrow img {
+  width: 1em;
+  height: 1em;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.gallery-arrows {
+  position: absolute;
+  top: calc(50% - 1em);
+  z-index: 4;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-arrows .left-arrow,
+.gallery-arrows .right-arrow {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  scale: 1.5;
+}
+
+.gallery-arrows .left-arrow:hover,
+.gallery-arrows .right-arrow:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.close-image {
+  display: none;
+}
+
+@media screen and (min-width: 600px) and (min-height: 1000px),
+  (min-width: 1000px) and (max-height: 900px) {
   .body-section {
     width: 90%;
   }
 
   .welcome-overlay {
     height: auto;
+  }
+
+  .gallery-arrows {
+    justify-content: space-between;
+  }
+
+  .gallery-arrows .left-arrow,
+  .gallery-arrows .right-arrow {
+    scale: 2.5;
   }
 }
 
@@ -116,5 +176,10 @@
 
   .welcome-overlay {
     height: 90vh;
+  }
+
+  .gallery-arrows .left-arrow,
+  .gallery-arrows .right-arrow {
+    scale: 1.2;
   }
 }

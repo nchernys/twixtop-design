@@ -49,13 +49,13 @@ function Testimonials() {
         <div className="testimonial-heading">
           <h3>Testimonials</h3>
           <div className="arrows">
-            <span className="testimonial-left-arrow" onClick={handleLeftArrow}>
+            <span className="left-arrow" onClick={handleLeftArrow}>
               <img
                 src="https://img.icons8.com/material-sharp/24/chevron-left.png"
                 alt="chevron-left"
               />
             </span>
-            <span className="testimonial-left-arrow" onClick={handleRightArrow}>
+            <span className="left-arrow" onClick={handleRightArrow}>
               <img
                 src="https://img.icons8.com/material-sharp/24/chevron-right.png"
                 alt="chevron-left"
