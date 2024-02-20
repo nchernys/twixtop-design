@@ -5,7 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(132, 7, 7);
+  background-color: rgb(154, 8, 8);
 }
 
 .welcome-overlay {
@@ -137,7 +137,7 @@
 .gallery-arrows .left-arrow,
 .gallery-arrows .right-arrow {
   margin: 0;
-  background-color: rgba(224, 224, 224, 0.15);
+  background-color: rgba(81, 81, 81, 0.2);
   border-radius: 50%;
   scale: 1.5;
 }
@@ -171,6 +171,13 @@
   }
 }
 
+@media screen and (max-height: 480px) and (max-width: 1000px) {
+  .gallery-arrows .left-arrow,
+  .gallery-arrows .right-arrow {
+    scale: 2;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .body-section {
     width: 60%;
@@ -186,6 +193,6 @@
 
   .gallery-arrows .left-arrow,
   .gallery-arrows .right-arrow {
-    scale: 1.5;
+    scale: 2;
   }
 }
