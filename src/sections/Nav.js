@@ -2,13 +2,10 @@ import "./Navigation.css";
 import "./allElementsCSS.css";
 import BecomeClient from "./BecomeClient";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Nav() {
   const [popUp, setPopUp] = useState(false);
-
-  const handlePopUp = () => {
-    setPopUp(true);
-  };
 
   const handleFormSubmit = () => {
     setPopUp(false);
@@ -17,13 +14,18 @@ function Nav() {
   return (
     <>
       <div className="welcome-page">
+        <div className="hero-image">
+          <LazyLoadImage
+            width="640"
+            height="360"
+            src="/images/red_welcome_sm.webp"
+            alt="welcome-image"
+          />
+        </div>
         <div className="welcome-overlay">
           <nav className="nav-bar">
             <div className="nav-brand">
-              <img
-                src="https://img.icons8.com/ios-filled/50/ffffff/old-vmware-logo.png"
-                alt="old-vmware-logo"
-              />
+              <img src="/icons/logo.png" alt="welcome-image" />
               TwixTop
             </div>
             <ul>

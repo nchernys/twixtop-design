@@ -1,5 +1,6 @@
 import "./allElementsCSS.css";
 import "./Contacts.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Contacts() {
   return (
@@ -8,15 +9,15 @@ function Contacts() {
         <div className="footer-overlay">
           <div className="footer-address">
             <div>
-              <img
+              <LazyLoadImage
                 src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
-                alt="facebook-new"
+                alt="facebook"
               />
-              <img
+              <LazyLoadImage
                 src="https://img.icons8.com/ios-filled/50/ffffff/telegram.png"
                 alt="telegram"
               />
-              <img
+              <LazyLoadImage
                 src="https://img.icons8.com/ios-filled/50/ffffff/behance.png"
                 alt="behance"
               />

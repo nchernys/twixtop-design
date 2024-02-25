@@ -4,6 +4,7 @@ import BecomeClient from "./BecomeClient";
 import { useState } from "react";
 import ShowCase from "./showCase";
 import cases from "./casesData.js";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function CaseStudies() {
   const [popUp, setPopUp] = useState(false);
@@ -54,16 +55,10 @@ function CaseStudies() {
           </span>
           <span className="arrows">
             <span className="left-arrow" onClick={handleLeftArrow}>
-              <img
-                src="https://img.icons8.com/material-sharp/24/chevron-left.png"
-                alt="chevron-left"
-              />
+              <img src="/icons/arrow-left-black.png" alt="arrow-left" />
             </span>
             <span className="right-arrow" onClick={handleRightArrow}>
-              <img
-                src="https://img.icons8.com/material-sharp/24/chevron-right.png"
-                alt="chevron-left"
-              />
+              <img src="/icons/arrow-right-black.png" alt="arrow-right" />
             </span>
           </span>
         </div>
@@ -73,17 +68,19 @@ function CaseStudies() {
             id="id1"
             onClick={() => handleShow(galleryShow)}
           >
-            <img src={cases[galleryShow].image} alt="case1" loading="lazy" />
+            <LazyLoadImage
+              src={cases[galleryShow].image}
+              alt="Lazy Loaded Image"
+            />
           </div>
           <div
             className="inner-case"
             id="id2"
             onClick={() => handleShow(galleryShow + 1)}
           >
-            <img
+            <LazyLoadImage
               src={cases[galleryShow + 1].image}
-              alt="case2"
-              loading="lazy"
+              alt="Lazy Loaded Image"
             />
           </div>
           <div
@@ -91,10 +88,9 @@ function CaseStudies() {
             id="id3"
             onClick={() => handleShow(galleryShow + 2)}
           >
-            <img
+            <LazyLoadImage
               src={cases[galleryShow + 2].image}
-              alt="case3"
-              loading="lazy"
+              alt="Lazy Loaded Image"
             />
           </div>
           <div className="inner-case violet-btn" id="id4" onClick={handlePopUp}>

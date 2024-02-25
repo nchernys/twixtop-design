@@ -1,6 +1,7 @@
 import "./OurTeam.css";
 import team from "./teamData.js";
 import "./allElementsCSS.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function OurTeam() {
   return (
@@ -11,7 +12,7 @@ function OurTeam() {
           {team.map((member) => (
             <div className="team-item" key={member.id}>
               <div className="team-image-wrapper">
-                <img src={member.image} alt={member.name} />
+                <LazyLoadImage src={member.image} alt={member.name} />
               </div>
               <div className="caption">
                 <h4>{member.name}</h4>

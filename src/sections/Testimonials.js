@@ -50,16 +50,10 @@ function Testimonials() {
           <h3>Testimonials</h3>
           <div className="arrows">
             <span className="left-arrow" onClick={handleLeftArrow}>
-              <img
-                src="https://img.icons8.com/material-sharp/24/chevron-left.png"
-                alt="chevron-left"
-              />
+              <img src="/icons/arrow-left-black.png" alt="arrow-left" />
             </span>
             <span className="left-arrow" onClick={handleRightArrow}>
-              <img
-                src="https://img.icons8.com/material-sharp/24/chevron-right.png"
-                alt="chevron-left"
-              />
+              <img src="/icons/arrow-right-black.png" alt="arrow-right" />
             </span>
           </div>
         </div>
