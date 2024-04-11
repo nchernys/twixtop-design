@@ -25,7 +25,7 @@ function Nav() {
         <div className="welcome-overlay">
           <nav className="nav-bar">
             <div className="nav-brand">
-              <img src="/icons/logo.png" />
+              <img src="/icons/logo.png" alt="" />
               TwixTop
             </div>
             <ul>
