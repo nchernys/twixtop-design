@@ -3,7 +3,7 @@ name: Generate a build and push to another branch
 on:
   push:
     branches:
-      - main # The branch name your are commit the new changes
+      - main # Trigger the workflow on pushes to the main branch
 
 jobs:
   build:
@@ -19,9 +19,18 @@ jobs:
       - name: Build
         run: npm run build # The build command of your project
 
-      - name: Create Build Branch
+      - name: Move build files to root directory
         run: |
-          git checkout -b build
-          git add -f build
+          mv build/* .
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+
+      - name: Push build files to build branch
+        run: |
+          git checkout -B build
+          git add .
           git commit -m "Deploy build to build branch"
           git push origin build
