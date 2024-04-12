@@ -39,7 +39,7 @@ function Nav() {
                 <a href="#testimonials">Testimonials</a>
               </li>
               <li>
-                <a href="#contacts">Contacts</a>
+                <a href="#contacts">Contacts AB</a>
               </li>
             </ul>
           </nav>
