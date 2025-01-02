@@ -29,12 +29,11 @@
 .welcome-overlay {
   background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: auto;
+  min-height: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 2em 0;
+  justify-content: center;
   font-size: 0.9rem;
   z-index: 1;
   position: relative;
@@ -177,7 +176,7 @@
   }
 
   .welcome-overlay {
-    height: auto;
+    height: 40rem;
   }
 
   .gallery-arrows {
@@ -196,12 +195,21 @@
   .gallery-arrows .right-arrow {
     scale: 2;
   }
+
+  .welcome-overlay {
+    height: 40rem;
+  }
+
 }
 
 @media screen and (max-height: 480px) and (max-width: 1000px) {
   .gallery-arrows .left-arrow,
   .gallery-arrows .right-arrow {
     scale: 2;
+  }
+  
+  .welcome-overlay {
+    height: 40rem;
   }
 }
 
@@ -211,7 +219,7 @@
   }
 
   .welcome-overlay {
-    height: 90vh;
+    height: 40rem;
   }
 
   .gallery-arrows {

@@ -27,7 +27,7 @@ function Contacts() {
           </div>
           <div style={{ color: "rgba(0,0,0,0.2)" }}>
             <a
-              href="http://portfolio.chernysn.tech"
+              href="https://nchernysheva.com"
               style={{ color: "rgba(0,0,0,0.2)", fontSize: ".8rem" }}
             >
               WebDev
